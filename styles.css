@@ -1,0 +1,411 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #fff;
+	font-family: "Gilroy";
+}
+/* @font-face {
+	font-family: "CustomFont", "Gilroy";
+	/* src: url(./ppmori.ttf) format("truetype"); */
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-family: "CustomFont", "Gilroy"; /* Use the custom font as the primary font family, and fallback to Gilroy if the custom font isn't available */
+}
+/* 
+.cursor {
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	position: fixed;
+	background-color: #edbfff;
+	z-index: 9;
+	mix-blend-mode: difference;
+	transition: left 0.3s ease, top 0.3s ease;
+} */
+
+/* Add this CSS code for the cursor dot */
+/* Add this CSS code for the cursor dot */
+.cursor {
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	position: fixed;
+	background-color: #edbfff;
+	z-index: 9999; /* Set a high z-index to ensure it's above other elements */
+	mix-blend-mode: difference;
+	transition: transform 0.1s ease; /* Smooth transition for movement */
+}
+
+/* Add this CSS code for the trail effect */
+.trail {
+	height: 8px;
+	width: 8px;
+	border-radius: 50%;
+	position: fixed;
+	background-color: #edbfff;
+	z-index: 9998; /* Set a high z-index to ensure it's above other elements, but behind the cursor */
+	pointer-events: none; /* Make sure the trail dots do not interfere with mouse events */
+	opacity: 0.5; /* Set the initial opacity for the trail dots */
+	transition: opacity 0.3s ease; /* Smooth transition for fading out */
+}
+
+#main {
+	background-color: #0f0d0d;
+}
+#page1 {
+	min-height: 100vh;
+	width: 100%;
+}
+#nav {
+	height: 55px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 30px;
+}
+#nav img {
+	height: 24px;
+}
+#nav-part2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+#nav #circle {
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background-color: #ece7f0;
+}
+
+#nav h4 {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+#nav h4:nth-child(1) {
+	text-decoration: underline;
+}
+
+#page1 > h1 {
+	font-size: 8vw;
+	/* vw is for resoponsive */
+	font-weight: 300;
+	font-family: PP mori;
+	margin-top: 12vw;
+	margin-left: 6vw;
+}
+#page1 > h2 {
+	font-size: 8vw;
+	/* vw is for resoponsive */
+	font-weight: 300;
+	font-family: PP mori;
+	margin-left: 26vw;
+}
+
+#page1 video {
+	width: 60%;
+	/* margin-left: 20%; */
+	margin-top: 10vw;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+	/* margin-right: auto; */
+}
+
+#page2 {
+	min-height: 80vh;
+	width: 100%;
+	padding: 100px 5vw;
+	border-bottom: 2px solid #2e2e2e;
+}
+
+#page2 h1 {
+	font-size: 7vw;
+	font-weight: 500;
+	color: #111;
+	font-family: PP mori;
+}
+.page2-container {
+	height: 60vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 5vw;
+}
+
+.page2-left {
+	width: 38%;
+}
+.page2-right {
+	width: 24%;
+}
+.page2-left h2 {
+	color: #111;
+	font-size: 4vw;
+	font-weight: 300;
+	line-height: 4vw;
+	font-family: PP mori;
+}
+
+.page2-right p {
+	color: #111;
+	font-size: 28px;
+	font-family: PP mori;
+}
+.page2-right button {
+	width: 100%;
+	border-radius: 50px;
+	border: none;
+	padding: 4px 0;
+	background-color: #edbfff;
+	color: #0f0d0d;
+	margin-top: 20px;
+}
+#page3 {
+	min-height: 150vh;
+	width: 100%;
+	position: relative;
+	padding-top: 100px;
+}
+
+#page3 h1 {
+	font-size: 6.9vw;
+	font-weight: 300;
+	color: #111;
+	margin-left: 100px;
+	font-family: PP mori;
+}
+#page3-part1 {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	/* width:  */
+}
+
+#page3-part1 img {
+	height: 600px;
+	margin-top: 160px;
+	margin-left: 100px;
+	position: relative;
+}
+
+#page3-part1 video {
+	margin-top: 5vh;
+	position: relative;
+	margin-right: 10vh;
+}
+#page3-part1 .info {
+	position: absolute;
+	bottom: 474px;
+	right: 10px;
+	font-size: clamp(15px, 0.84167vw, 16px);
+	letter-spacing: -0.03em;
+	color: #111;
+}
+#page3-part1 .info1 {
+	position: absolute;
+	bottom: 269px;
+	right: 798px;
+	font-size: clamp(15px, 0.84167vw, 16px);
+	letter-spacing: -0.03em;
+	color: #111;
+}
+#page3-part1 .info1 h3 {
+	font-size: clamp(32px, 1.6667vw, 32px);
+	font-weight: 500;
+	letter-spacing: -0.02em;
+	line-height: 1.2;
+	color: #111;
+	position: absolute;
+	bottom: 100px;
+	left: -1022px;
+	font-family: PP mori;
+}
+#page3-part1 .info1 p {
+	font-size: clamp(20px, 0.84167vw, 16px);
+	letter-spacing: -0.03em;
+	color: #111;
+	font-weight: 500;
+	position: absolute;
+	bottom: 76px;
+	left: -1022px;
+	font-family: PP mori;
+}
+#page3-part1 .info h3 {
+	position: absolute;
+	top: -115px;
+	left: -800px;
+	font-size: clamp(32px, 1.6667vw, 32px);
+	font-weight: 600;
+	letter-spacing: 0.02em;
+	line-height: 1.2;
+	color: #111;
+	font-family: PP mori;
+}
+#page3-part1 .info p {
+	font-size: clamp(20px, 0.84167vw, 16px);
+	letter-spacing: -0.03em;
+	color: #111;
+	font-weight: 500;
+	position: absolute;
+	top: -70px;
+	left: -800px;
+	font-family: PP mori;
+}
+
+.page4 {
+	min-height: 100vh;
+	width: 100%;
+	/* overflow-x: hidden; */
+	position: relative;
+	padding-top: 100px;
+}
+#page4 video {
+	margin-top: 2vh;
+}
+#page4-part1 {
+	display: flex;
+	height: 130vh;
+	align-items: flex-start;
+	justify-content: space-between;
+	/* width:  */
+}
+
+#page4-part1 img {
+	height: 700px;
+	margin-right: 10vh;
+
+	margin-top: -250px;
+	/* margin-left: 100px; */
+	position: relative;
+}
+
+#page4-part1 video {
+	margin-top: 5vh;
+	position: relative;
+	margin-left: 10vh;
+}
+#page4-part1 .info {
+	position: absolute;
+	bottom: 474px;
+	right: 10px;
+	font-size: clamp(15px, 0.84167vw, 16px);
+	letter-spacing: -0.03em;
+	color: #111;
+}
+#page4-part1 .info1 {
+	position: absolute;
+	bottom: 269px;
+	right: 798px;
+	font-size: clamp(15px, 0.84167vw, 16px);
+	letter-spacing: -0.03em;
+	color: #111;
+}
+#page4-part1 .info1 h3 {
+	font-size: clamp(32px, 1.6667vw, 32px);
+	font-weight: 500;
+	letter-spacing: -0.02em;
+	line-height: 1.2;
+	color: #111;
+	position: absolute;
+	bottom: 290px;
+	left: -1022px;
+	font-family: PP mori;
+}
+#page4-part1 .info1 p {
+	font-size: clamp(20px, 0.84167vw, 16px);
+	letter-spacing: -0.03em;
+	color: #111;
+	font-weight: 500;
+	position: absolute;
+	bottom: 260px;
+	left: -1022px;
+	font-family: PP mori;
+}
+#page4-part1 .info h3 {
+	position: absolute;
+	top: -255px;
+	left: -730px;
+	font-size: clamp(32px, 1.6667vw, 32px);
+	font-weight: 600;
+	letter-spacing: 0.02em;
+	line-height: 1.2;
+	color: #111;
+	font-family: PP mori;
+}
+#page4-part1 .info p {
+	font-size: clamp(20px, 0.84167vw, 16px);
+	letter-spacing: -0.03em;
+	color: #111;
+	font-weight: 500;
+	position: absolute;
+	top: -200px;
+	left: -730px;
+	font-family: PP mori;
+}
+.page4-bottom {
+	height: 80vh;
+	border-bottom: 2px solid #222222;
+}
+
+.page4-bottom .bottomtitle {
+	margin-top: -300px;
+	display: flex;
+	justify-content: space-around;
+	gap: 24vw;
+}
+
+.page4-bottom .bottomtitle h1 {
+	font-size: 5.2rem;
+	font-weight: 500;
+	letter-spacing: 0.02em;
+	line-height: 1.2;
+	padding-top: 80px;
+	color: #111;
+	font-family: PP mori;
+}
+.page4-bottom .bottomtitle button {
+	width: 13vw;
+	height: 26vh;
+	border-radius: 50%;
+	border: none;
+	cursor: pointer;
+	font-size: 1.2vw;
+	color: #111;
+	background-color: #edbfff;
+	transition: background-color 0.3s ease, color 0.3s ease; /* Add smooth transitions */
+}
+
+.page4-bottom .bottomtitle button:hover {
+	background-color: #111;
+	color: #fff;
+}
+
+/* Add the hover animation styles for the images and videos */
+#page3-part1 img:hover,
+#page3-part1 video:hover,
+#page4-part1 img:hover,
+#page4-part1 video:hover {
+	transform: scale(1.1); /* Zoom in by 10% */
+	filter: blur(3px); /* Add a 5px blur effect */
+	transition: transform 0.3s ease, filter 0.3s ease; /* Add smooth transitions */
+}
+
+/* Reset the styles when not hovering to remove the blur and zoom effect */
+#page3-part1 img,
+#page3-part1 video,
+#page4-part1 img,
+#page4-part1 video {
+	transform: scale(1); /* Reset the scale to 1 (no zoom) */
+	filter: blur(0); /* Reset the blur effect */
+	transition: transform 0.3s ease, filter 0.3s ease; /* Add smooth transitions */
+}
