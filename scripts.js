@@ -151,3 +151,17 @@ let tl2 = gsap.timeline({
 tl2.to("#main", {
 	backgroundColor: "#fff",
 });
+
+let tl3 = gsap.timeline({
+	scrollTrigger: {
+		trigger: "#page1 h1",
+		scroller: "#main",
+		// markers: true,
+		start: "top -500%",
+		end: "top -540%",
+		scrub: 3,
+	},
+});
+tl3.to("#main", {
+	backgroundColor: "#0f0d0d",
+});
