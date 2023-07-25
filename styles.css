@@ -37,7 +37,9 @@ body {
 	background-color: #edbfff;
 	z-index: 9999; /* Set a high z-index to ensure it's above other elements */
 	mix-blend-mode: difference;
-	transition: transform 0.1s ease; /* Smooth transition for movement */
+	background-position: center;
+	background-size: cover;
+	transition: transform 0.1s ease, background-image ease 0.5s; /* Smooth transition for movement */
 }
 
 /* Add this CSS code for the trail effect */
@@ -55,6 +57,7 @@ body {
 
 #main {
 	background-color: #0f0d0d;
+	cursor: none;
 }
 #page1 {
 	min-height: 100vh;
@@ -467,4 +470,43 @@ body {
 .elem:hover img {
 	opacity: 1;
 	transform: translateY(0%) rotate(0%);
+}
+#page6 {
+	min-height: 100vh;
+	width: 100%;
+	position: relative;
+	z-index: 9;
+	padding: 140px 100px;
+}
+#page6 h2 {
+	font-size: 4vw;
+	text-transform: uppercase;
+	font-family: PP mori;
+	font-weight: 400;
+}
+#page6 h2 span {
+	color: #edbfff;
+	font-family: PP mori;
+}
+.box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 110px;
+	padding: 0 20px;
+	border-top: 2px solid #dadada;
+}
+.box h3,
+h4 {
+	font-family: PP mori;
+}
+
+.box:nth-last-child(1) {
+	border-bottom: 2px solid #dadada;
+}
+
+#footer {
+	height: 90vh;
+	width: 100%;
+	background-color: #edbfff;
 }
