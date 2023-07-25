@@ -61,7 +61,7 @@ document.body.appendChild(trailContainer);
 
 var main = document.querySelector("#main");
 
-main?.addEventListener("mousemove", function (dets) {
+document?.addEventListener("mousemove", function (dets) {
 	// Move the cursor dot to the new position
 	crsr.style.transform = `translate(${dets.x - 10}px, ${dets.y - 10}px)`;
 
@@ -74,8 +74,8 @@ main?.addEventListener("mousemove", function (dets) {
 	// Create a trail dot
 	var trailDot = document.createElement("div");
 	trailDot.classList.add("trail");
-	trailDot.style.left = dets.x - 3 + "px";
-	trailDot.style.top = dets.y - 3 + "px";
+	trailDot.style.left = dets.x - 20 + "px";
+	trailDot.style.top = dets.y - 20 + "px";
 	trailContainer.appendChild(trailDot);
 
 	// After a short delay, fade out and remove the trail dot
@@ -181,5 +181,18 @@ boxes.forEach(function (elem) {
 		crsr.style.height = "20px";
 		crsr.style.borderRadius = "50%";
 		crsr.style.backgroundImage = `none`;
+	});
+});
+
+var h4 = document.querySelectorAll("#nav h4");
+var purple = document.querySelector("#purple");
+h4.forEach(function (elem) {
+	elem.addEventListener("mouseenter", function () {
+		purple.style.display = "block";
+		purple.style.opacity = "1";
+	});
+	elem.addEventListener("mouseleave", function () {
+		purple.style.display = "none";
+		purple.style.opacity = "0";
 	});
 });
