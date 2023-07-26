@@ -2,8 +2,7 @@
 
 # duo-studio-creativeDesign
 
-[![ duo-studio-creativeDesign](https://yashvarpe05.github.io/duo-studio-creativeDesign/)]
-
+[our_website_url](https://yashvarpe05.github.io/duo-studio-creativeDesign/). 
 - a creative web studio specializing in web design and development. 
 
 ## About Us
@@ -33,7 +32,7 @@ I'm enthusiastic to showcase our work and look forward to creating outstanding d
 
 ## Getting Started
 
-To view the live version of the website, visit [your_website_url](link_to_your_website). 
+To view the live version of the website, visit [our_website_url](https://yashvarpe05.github.io/duo-studio-creativeDesign/). 
 
 To run the project locally, follow these steps:
 
