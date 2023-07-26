@@ -1,16 +1,18 @@
+# Hi, I'm Yash Varpe! 👋
+
 # duo-studio-creativeDesign
 
 ![ duo-studio-creativeDesign](link_to_your_banner_image)
 
-Welcome to the GitHub repository for [duo-studio-creativeDesign](link_to_your_website) - a creative studio specializing in web design and development. 
+- a creative web studio specializing in web design and development. 
 
 ## About Us
 
-At duo-studio-creativeDesign, we are passionate about crafting beautiful and functional websites that leave a lasting impression. 
+I'm enthusiastic to showcase our work and look forward to creating outstanding digital experiences for your brand! I am passionate about crafting beautiful and functional websites that leave a lasting impression. 
 
 ## Website Preview
 
-![Website Preview]((https://github.com/YashVarpe05/duo-studio-creativeDesign/blob/main/Frame%203.png))
+![Website Preview](https://github.com/YashVarpe05/duo-studio-creativeDesign/blob/main/Frame%203.png)
 
 ## Key Features
 
@@ -20,9 +22,8 @@ At duo-studio-creativeDesign, we are passionate about crafting beautiful and fun
 
 - **Intuitive Navigation:** User experience is our top priority, and we design websites with intuitive navigation for easy exploration.
 
-- **Performance-Optimized:** Our websites are optimized for speed and performance, providing a smooth browsing experience.
+- **Performance-Optimized:** Additionally, performance optimization is a key consideration, resulting in speedy and seamless browsing.
 
-- **SEO-Friendly:** We follow SEO best practices to improve search engine visibility and increase organic traffic.
 
 ## Technologies Used
 
@@ -58,6 +59,10 @@ We welcome contributions to improve [YDuo-studio0creativeDesign]. To contribute,
 3. Make your changes and commit them: `git commit -m "Your commit message here"`
 4. Push to the original branch: `git push origin your-branch-name`
 5. Create a pull request outlining your changes.
+
+## 🚀 About Me
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yash-varpe-960703234/)
 
 ## Contact Us
 
