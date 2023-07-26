@@ -2,7 +2,7 @@
 
 # duo-studio-creativeDesign
 
-[our_website_url](https://yashvarpe05.github.io/duo-studio-creativeDesign/). 
+[Duo Studio Website](https://yashvarpe05.github.io/duo-studio-creativeDesign/). 
 - a creative web studio specializing in web design and development. 
 
 ## About Us
