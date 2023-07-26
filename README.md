@@ -2,7 +2,7 @@
 
 # duo-studio-creativeDesign
 
-![ duo-studio-creativeDesign](link_to_your_banner_image)
+![ duo-studio-creativeDesign](https://yashvarpe05.github.io/duo-studio-creativeDesign/)
 
 - a creative web studio specializing in web design and development. 
 
